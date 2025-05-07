@@ -93,28 +93,38 @@ npm run dev
 
 🧪 Routes Overview
 Public Routes:
+```
 /login
 
 /signup
+```
 
 Protected Routes:
+```
 /admin-dashboard → Only accessible to admin
 
 /client-dashboard → Accessible to admin & client
 
 /feedback/:id → Admin can view specific feedback
-
+```
+----
 📝 Feedback Module
 Client can submit feedback (feature can be extended)
 
 Admin can view and manage all feedback entries
+----
 
+----
 🌐 Deployment
 You can deploy the frontend on Vercel and the backend on Render / Railway / Vercel (with vercel.json)
+----
 
+----
 ✍️ Author
 👨‍💻 Adithyan S
+----
 
-
+----
 📜 License
 This project is licensed under the MIT License.
+----
