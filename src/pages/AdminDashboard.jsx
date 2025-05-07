@@ -16,7 +16,7 @@ const AdminDashboard = () => {
     const fetchFeedbacks = async () => {
       try {
         const token = localStorage.getItem("feedback-token");
-        const res = await axios.get("https://mern-role-auth-clientfeedback-app-server-nlpqevo8i.vercel.app/api/feedback", {
+        const res = await axios.get("https://mern-role-auth-clientfeedback-app-server.vercel.app/api/feedback", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -37,7 +37,7 @@ const AdminDashboard = () => {
 
     try {
       const token = localStorage.getItem("feedback-token");
-      await axios.delete(`https://mern-role-auth-clientfeedback-app-server-nlpqevo8i.vercel.app/api/feedback/${id}`, {
+      await axios.delete(`https://mern-role-auth-clientfeedback-app-server.vercel.app/api/feedback/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -79,7 +79,7 @@ const AdminDashboard = () => {
     {
       name: "Image",
       cell: (row) => {
-        const imageUrl = `https://mern-role-auth-clientfeedback-app-server-nlpqevo8i.vercel.app/${row.image}`;
+        const imageUrl = `https://mern-role-auth-clientfeedback-app-server.vercel.app/${row.image}`;
         return row.image ? (
           <img
             src={imageUrl}
