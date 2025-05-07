@@ -20,7 +20,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/auth/register",
+        "https://mern-role-auth-clientfeedback-app-server-nlpqevo8i.vercel.app/api/auth/register",
         formData
       );
       login(res.data); // auto-login after successful signup

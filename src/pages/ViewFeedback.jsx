@@ -11,7 +11,7 @@ const ViewFeedback = () => {
     const fetchFeedback = async () => {
       try {
         const token = localStorage.getItem("feedback-token");
-        const res = await axios.get(`http://localhost:3000/api/feedback/${id}`, {
+        const res = await axios.get(`https://mern-role-auth-clientfeedback-app-server-nlpqevo8i.vercel.app/api/feedback/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -39,7 +39,7 @@ const ViewFeedback = () => {
           {/* Image */}
           <div className="w-32 h-32">
             <img
-              src={`http://localhost:3000${feedback.image}`}
+              src={`https://mern-role-auth-clientfeedback-app-server-nlpqevo8i.vercel.app/${feedback.image}`}
               alt="feedback"
               className="w-full h-full object-cover rounded"
             />

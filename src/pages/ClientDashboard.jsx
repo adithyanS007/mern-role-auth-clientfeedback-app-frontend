@@ -33,7 +33,7 @@ const ClientDashboard = () => {
         data.append("image", imageFile);
       }
 
-      await axios.post("http://localhost:3000/api/feedback/add", data, {
+      await axios.post("https://mern-role-auth-clientfeedback-app-server-nlpqevo8i.vercel.app/api/feedback/add", data, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`
