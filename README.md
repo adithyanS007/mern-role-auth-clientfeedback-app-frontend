@@ -66,13 +66,13 @@ cd mern-role-auth-clientfeedback-app-server
 npm install
 touch .env
 ```
-Inside .env file
+- Inside .env file
 ```
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
-Run Backend
+- Run Backend
 ```
 npm start
 ```
@@ -84,22 +84,21 @@ npm install
 npm run dev
 ```
 
-🔐 Authentication Flow
+## 🔐 Authentication Flow
 ✅ Login and Signup
 
-🧑‍💼 Role assigned during user creation (admin or client)
-
+##🧑‍💼 Role assigned during user creation (admin or client)
 🛡 PrivateRoutes and RoleBasedRoutes components protect unauthorized access
 
-🧪 Routes Overview
-Public Routes:
+## 🧪 Routes Overview
+- Public Routes:
 ```
 /login
 
 /signup
 ```
 
-Protected Routes:
+- Protected Routes:
 ```
 /admin-dashboard → Only accessible to admin
 
@@ -108,22 +107,22 @@ Protected Routes:
 /feedback/:id → Admin can view specific feedback
 ```
 
-📝 Feedback Module
-Client can submit feedback (feature can be extended)
+## 📝 Feedback Module
+- Client can submit feedback (feature can be extended)
 
 Admin can view and manage all feedback entries
 
 
 
-🌐 Deployment
+## 🌐 Deployment
 You can deploy the frontend on Vercel and the backend on Render / Railway / Vercel (with vercel.json)
 
 
-✍️ Author
+## ✍️ Author
 👨‍💻 Adithyan S
 
 
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 
