@@ -107,24 +107,23 @@ Protected Routes:
 
 /feedback/:id → Admin can view specific feedback
 ```
-----
+
 📝 Feedback Module
 Client can submit feedback (feature can be extended)
 
 Admin can view and manage all feedback entries
-----
 
-----
+
+
 🌐 Deployment
 You can deploy the frontend on Vercel and the backend on Render / Railway / Vercel (with vercel.json)
-----
 
-----
+
 ✍️ Author
 👨‍💻 Adithyan S
-----
 
-----
+
+
 📜 License
 This project is licensed under the MIT License.
-----
+
